@@ -495,3 +495,8 @@ without allocating any `IPublishedContent` instances:
         <li><a href="@recipe.Url">@recipe.GetAttribute("@nodeName", "")</a></li>    
     }
     </ul>
+
+## Using the right controller for the job - Api vs Surface controller
+
+ * The ´SurfaceController´ SHOULD only be used for posting data from frontend forms to the controller.
+ * The ´UmbracoApiController` SHOULD be used in most cases when returing data during XHR requests to the frontend.
